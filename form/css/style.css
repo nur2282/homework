@@ -1,0 +1,55 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+  font-size: 18px;
+  margin: 0 0 30px 0;
+}
+.form{
+  width: 450px;
+  padding: 20px;
+  border-radius: 20px ;
+  margin: 40px;
+  background-color: #030399;
+  color: #fff;
+}
+
+textarea, input{
+  display: block;
+  background-color: #030399;
+  font-size: 16px;
+  padding: 5px 15px;
+  border: none;
+  border-bottom: 1.2px solid #fff;
+  color: #fff;
+  margin: 10px 0 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+  
+}
+textarea{
+  resize: vertical;
+  max-height: 200px;
+  min-height: 35px;
+}
+
+.form-label{
+  font-size: 18px;
+}
+.checkbox{
+  display: inline-block;
+  width: auto;
+  cursor: pointer;
+
+}
+.checkbox-label{
+  font-size: 16px;
+}
+.form-button{
+  display: block;
+  font-size: 16px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
