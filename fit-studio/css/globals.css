@@ -1,0 +1,40 @@
+html {
+  font-family: Ubuntu, sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+  /* overflow-y: hidden; */
+  /*убрать горизонтальный скролл */
+
+}
+
+body *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
