@@ -3,8 +3,6 @@
   margin-bottom: 120px;
 }
 
-
-
 .article-title-medium {
   font-size: 36px;
 }
@@ -98,4 +96,13 @@
   padding: 0;
   border-radius: 50%;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.article-play-button:hover {
+  background-color: #42a7ff;
+}
+
+.article-play-button:not(:disabled):active {
+  background-color: #2171b7;
 }
