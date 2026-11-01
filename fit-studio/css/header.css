@@ -8,17 +8,14 @@
   border-bottom: 1px solid #d3cbd9;
 }
 
-.phone {
+.phone p {
   font-size: 14px;
-  color: #858e8a;
-  font-weight: 300;
-  letter-spacing: 0.04em;
-  text-align: right;
-  text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
-.phone p {
-  margin-bottom: 8px;
+.phone {
+  text-align: right;
+
 }
 
 .phone a {
