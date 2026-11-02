@@ -28,33 +28,14 @@
 }
 
 .article-decor-wrapper-1::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  background: url(../images/декор\ 2.svg);
-  width: 528px;
-  height: 48px;
-}
-
-.article-decor-wrapper-2::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  background: url(../images/декор\ 2.svg);
-  width: 528px;
-  height: 48px;
-}
-
-.article-decor-wrapper-1::before {
   top: 100px;
-  left: -350px;
+  left: 0;
 
 }
 
-.article-decor-wrapper-2::after {
+.article-decor-wrapper-2::before {
+  right: 0;
   bottom: 136px;
-  right: -340px;
-
 }
 
 .article-img {
@@ -72,22 +53,31 @@
 
 .article-item::marker {
   color: #3596ED;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: end;
   font-size: 22px;
 }
 
-.article-decor-wrapper {
-  position: relative;
-}
 
 .article-play-button {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 60px;
   height: 60px;
@@ -96,6 +86,7 @@
   padding: 0;
   border-radius: 50%;
   cursor: pointer;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -105,4 +96,52 @@
 
 .article-play-button:not(:disabled):active {
   background-color: #2171b7;
+}
+
+@media(width <=768px) {
+  .article-decor-wrapper::before {
+    display: none;
+  }
+
+  .article-mb-1 {
+    margin-bottom: 60px;
+  }
+
+  .article-title-medium {
+    font-size: 32px;
+  }
+
+  .article-mb-2 {
+    margin-bottom: 40px;
+  }
+
+}
+
+@media(width <=576px) {
+  .article {
+    padding-top: 40px;
+    margin-bottom: 80px;
+  }
+
+  .article-title-medium {
+    font-size: 28px;
+  }
+
+  .article-mb-1 {
+    margin-bottom: 40px;
+  }
+
+  .article-mb-2 {
+    margin-bottom: 30px;
+  }
+
+  .article-play-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .article-play-button img {
+    width: 18px;
+    height: auto;
+  }
 }
