@@ -1,4 +1,4 @@
-.header-inner {
+.header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,17 +14,17 @@
   border-bottom: 1px solid #d3cbd9;
 }
 
-.phone p {
+.header__phone {
+  text-align: right;
+}
+
+.header__phone-text {
   font-size: 14px;
   margin-bottom: 8px;
 }
 
-.phone {
-  text-align: right;
 
-}
-
-.phone a {
+.header__phone-link {
   font-weight: 500;
   font-size: 18px;
   color: #2c332f;
@@ -32,6 +32,6 @@
   transition: color 0.3s;
 }
 
-.phone a:hover {
+.header__phone-link:hover {
   color: #3596ED;
 }
