@@ -1,0 +1,78 @@
+.page {
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: var(--main-color);
+  min-width: 375px;
+}
+
+.container {
+  width: min(var(--container-width), 100% - var(--container-padding) * 2);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--second-family);
+  font-weight: 400;
+}
+
+.slider-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--main-color);
+}
+
+.button {
+  position: relative;
+  display: inline-flex;
+  padding: 14px 53px;
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  border-radius: 200px;
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--main-color);
+  transition: padding-right var(--transition-time);
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  right: 40px;
+  top: 44%;
+  background: url(../../icons/arrow-down.svg) no-repeat center / cover;
+  width: 12px;
+  height: 8px;
+  transform: rotate(267deg);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility var(--transition-time), opacity var(--transition-time), right var(--transition-time);
+
+}
+
+@media(any-hover: hover) {
+  .button:hover::after {
+    opacity: 1;
+    visibility: visible;
+    right: 30px;
+  }
+
+  .button:hover {
+    padding-right: 60px;
+  }
+
+}
+
+
+@media(width<=576px) {
+  .button {
+    padding: 10px 33px;
+    font-size: 16px;
+  }
+}

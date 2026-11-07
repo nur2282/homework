@@ -1,0 +1,126 @@
+.header {
+  padding: 30px 0;
+  margin-bottom: 28px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 36px;
+}
+
+@media(width <=768px) {
+  .header__menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100vh;
+    padding: 150px 15px 0;
+    min-width: 297px;
+    z-index: var(--layer-2);
+    background-color: var(--second-bg-color);
+    box-shadow: -4px 0 35px var(--shadow-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: right var(--transition-time), opacity var(--transition-time), visibility var(--transition-time);
+  }
+
+  .header__menu--open {
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+  }
+
+  .menu__list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+
+.menu__link {
+  position: relative;
+  font-size: 14px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.menu__link::after,
+.menu__link::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  width: 0%;
+  height: 1.5px;
+  background-color: var(--hover-link-color);
+  transition: width var(--transition-time) ease-in-out;
+}
+
+.menu__link::after {
+  right: 50%;
+}
+
+.menu__link::before {
+  left: 50%;
+}
+
+@media(any-hover: hover) {
+
+  .menu__link:hover::before,
+  .menu__link:hover::after {
+    width: 50%;
+  }
+
+}
+
+.header__actions {
+  display: flex;
+  gap: 21px;
+}
+
+.header__actions-button {
+  color: var(--main-color);
+  transition: color var(--transition-time), transform var(--transition-time);
+}
+
+.header__actions-button:hover {
+  color: var(--hover-link-color);
+  transform: translateY(-4px);
+}
+
+.header__actions-icon {
+  stroke: currentColor;
+}
+
+@media(width > 768px) {
+  .header__burger {
+    display: none;
+  }
+}
+
+@media(width<=768px) {
+
+  .header__burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: var(--layer-2);
+  }
+
+  .burger__menu-icon,
+  .burger--open .burger__menu-cross {
+    display: block;
+  }
+
+  .burger__menu-cross,
+  .burger--open .burger__menu-icon {
+    display: none;
+  }
+}
