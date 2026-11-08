@@ -90,9 +90,11 @@
   transition: color var(--transition-time), transform var(--transition-time);
 }
 
-.header__actions-button:hover {
-  color: var(--hover-link-color);
-  transform: translateY(-4px);
+@media(any-hover: hover) {
+  .header__actions-button:hover {
+    color: var(--hover-link-color);
+    transform: translateY(-4px);
+  }
 }
 
 .header__actions-icon {
