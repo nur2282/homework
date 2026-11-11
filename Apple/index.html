@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="icon" href="./icons/favicon.ico" type="image/x-icon" />
-    <title>Apple</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
     <script src="./js/index.js" type="module"></script>
+    <title>Apple</title>
   </head>
   <body class="page__body">
     <header class="header">
@@ -58,25 +60,89 @@
     <main class="main">
       <section class="section">
         <div class="container hero__container">
-          <div class="hero__inner">
-            <div class="hero__info">
-              <h1 class="title hero__title">The new phones are here take a look.</h1>
-              <p class="hero__desc slider-desc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui,
-                aliquam, tempor. Faucibus morbi turpis.
-              </p>
-              <a class="button" aria-label="Explore" href="#"> Explore</a>
+          <div class="hero__slider-wrapper">
+            <button
+              class="hero__slider-button hero__slider-button--prev"
+              aria-label="Previous slide">
+              <svg width="14" height="26">
+                <use class="hero__slider-button-icon" href="./icons/slider-arrow-left.svg"></use>
+              </svg>
+            </button>
+            <div class="swiper hero__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="hero__slider-inner">
+                    <div class="hero__info">
+                      <h1 class="title hero__title">The new phones are here take a look.</h1>
+                      <p class="hero__desc slider-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est
+                        dui, aliquam, tempor. Faucibus morbi turpis.
+                      </p>
+                      <a class="button" aria-label="Explore" href="#">Explore</a>
+                    </div>
+                    <picture class="hero__picture">
+                      <source srcset="./images/slider-1-img.webp" type="image/webp" />
+                      <img
+                        class="hero__image"
+                        src="./images/slider-1-img.png"
+                        width="647"
+                        height="550"
+                        alt="An image of the latest iPhone models" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__slider-inner">
+                    <div class="hero__info">
+                      <h1 class="title hero__title">The new phones are here take a look.</h1>
+                      <p class="hero__desc slider-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est
+                        dui, aliquam, tempor. Faucibus morbi turpis.
+                      </p>
+                      <a class="button" aria-label="Explore" href="#"> Explore</a>
+                    </div>
+                    <picture class="hero__picture">
+                      <source srcset="./images/slider-1-img.webp" type="image/webp" />
+                      <img
+                        class="hero__image"
+                        src="./images/slider-1-img.png"
+                        width="647"
+                        height="550"
+                        alt="An image of the latest iPhone models" />
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__slider-inner">
+                    <div class="hero__info">
+                      <h1 class="title hero__title">The new phones are here take a look.</h1>
+                      <p class="hero__desc slider-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est
+                        dui, aliquam, tempor. Faucibus morbi turpis.
+                      </p>
+                      <a class="button" aria-label="Explore" href="#"> Explore</a>
+                    </div>
+                    <picture class="hero__picture">
+                      <source srcset="./images/slider-1-img.webp" type="image/webp" />
+                      <img
+                        class="hero__image"
+                        src="./images/slider-1-img.png"
+                        width="647"
+                        height="550"
+                        alt="An image of the latest iPhone models" />
+                    </picture>
+                  </div>
+                </div>
+              </div>
             </div>
-            <img
-              class="hero__image"
-              width="647"
-              height="550"
-              src="./images/slider-1-img.png"
-              alt="An image of the latest iPhone models" />
+            <button class="hero__slider-button hero__slider-button--next" aria-label="Next slide">
+              <svg width="14" height="26">
+                <use class="hero__slider-button-icon" href="./icons/slider-arrow-left.svg"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
-
       <section class="categories">
         <div class="container">
           <h2 class="title-medium">Shop our latest offers and categories</h2>
@@ -135,6 +201,189 @@
               </div>
             </a>
           </div>
+        </div>
+      </section>
+      <section class="bestsellers">
+        <div class="container">
+          <h2 class="title-medium">Save on our most selled items.</h2>
+          <p class="bestsellers__desc section-desc">
+            Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+          </p>
+          <div class="bestsellers__list">
+            <article class="bestsellers__card">
+              <div class="bestsellers__card-top">
+                <picture>
+                  <source srcset="./images/bestsellers-card-img-1.webp" type="image/webp" />
+                  <img
+                    class="bestsellers__card-image"
+                    width="247"
+                    height="214"
+                    src="./images/bestsellers-card-img-1.png"
+                    alt="Mag Book 13 pro" />
+                </picture>
+                <a href="#" class="bestsellers__card-link">
+                  <h3 class="bestsellers__card-title">MacBook Pro 13</h3>
+                </a>
+                <p class="bestsellers__card-desc">
+                  Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+                </p>
+              </div>
+              <div class="bestsellers__card-bottom">
+                <p class="bestsellers__card-price">$ 1,200.00 USD</p>
+              </div>
+            </article>
+            <article class="bestsellers__card">
+              <div class="bestsellers__card-top">
+                <picture>
+                  <source srcset="./images/bestsellers-card-img-2.webp" type="image/webp" />
+                  <img
+                    class="bestsellers__card-image"
+                    width="247"
+                    height="214"
+                    src="./images/bestsellers-card-img-2.png"
+                    alt="Smart Galaxy Watch 3" />
+                </picture>
+                <a href="#" class="bestsellers__card-link">
+                  <h3 class="bestsellers__card-title">Smart Galaxy Watch 3</h3>
+                </a>
+                <p class="bestsellers__card-desc">
+                  Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
+                  adipisci velit...
+                </p>
+              </div>
+              <div class="bestsellers__card-bottom">
+                <p class="bestsellers__card-price">$ 199.00 USD</p>
+              </div>
+            </article>
+            <article class="bestsellers__card">
+              <div class="bestsellers__card-top">
+                <picture>
+                  <source srcset="./images/bestsellers-card-img-3.webp" type="image/webp" />
+                  <img
+                    class="bestsellers__card-image"
+                    width="247"
+                    height="214"
+                    src="./images/bestsellers-card-img-3.png"
+                    alt="MacBook Air M1" />
+                </picture>
+                <a href="#" class="bestsellers__card-link">
+                  <h3 class="bestsellers__card-title">MacBook Air M1</h3>
+                </a>
+                <p class="bestsellers__card-desc">
+                  Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
+                  adipisci velit...
+                </p>
+              </div>
+              <div class="bestsellers__card-bottom">
+                <p class="bestsellers__card-price">$ 1,009.00 USD</p>
+              </div>
+            </article>
+            <article class="bestsellers__card">
+              <div class="bestsellers__card-top">
+                <picture>
+                  <source srcset="./images/bestsellers-card-img-4.webp" type="image/webp" />
+                  <img
+                    class="bestsellers__card-image"
+                    width="247"
+                    height="214"
+                    src="./images/bestsellers-card-img-4.png"
+                    alt="iPad" />
+                </picture>
+                <a href="#" class="bestsellers__card-link">
+                  <h3 class="bestsellers__card-title">iPad</h3>
+                </a>
+                <p class="bestsellers__card-desc">
+                  Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
+                  adipisci velit...
+                </p>
+              </div>
+              <div class="bestsellers__card-bottom">
+                <p class="bestsellers__card-price">$ 610.00 USD</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="promo">
+        <div class="container">
+          <h2 class="title-medium">See the best around here</h2>
+          <p class="bestsellers__desc section-desc">
+            Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+          </p>
+          <div class="promo__list">
+            <article class="promo__card">
+              <p class="promo__card-text">Smart light bulb pack</p>
+              <h3 class="promo__card-title">Latest and gratest</h3>
+              <a class="button" aria-label="Explore" href="#">Explore</a>
+              <picture>
+                <source srcset="./images/promo-card-image-1.webp" />
+                <img
+                  src="./images/promo-card-image-1.png"
+                  width="259"
+                  height="250"
+                  class="promo__card-image"
+                  alt="Apple watches" />
+              </picture>
+            </article>
+            <article class="promo__card">
+              <p class="promo__card-text">Smart light bulb pack</p>
+              <h3 class="promo__card-title">Best selling</h3>
+              <a class="button" aria-label="Explore" href="#">Explore</a>
+              <picture>
+                <source srcset="./images/promo-card-image-2.webp" />
+                <img
+                  src="./images/promo-card-image-2.png"
+                  width="294"
+                  height="250"
+                  class="promo__card-image"
+                  alt="Laptop phones and watch" />
+              </picture>
+            </article>
+            <article class="promo__card">
+              <p class="promo__card-text">Smart light bulb pack</p>
+              <h3 class="promo__card-title">Every product</h3>
+              <a class="button" aria-label="Explore" href="#">Explore</a>
+              <picture>
+                <source srcset="./images/promo-card-image-3.webp" />
+                <img
+                  src="./images/promo-card-image-3.png"
+                  width="355"
+                  height="250"
+                  class="promo__card-image"
+                  alt="laptop with phone" />
+              </picture>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="ideas">
+        <div class="container">
+          <h2 class="title-medium">Ideas have a place here</h2>
+          <p class="bestsellers__desc section-desc">
+            Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+          </p>
+          <div class="ideas__wrapper">
+            <picture>
+              <source srcset="./images/ideas-img.webp" type="images/webp" />
+              <img
+                src="./images/ideas-img.png"
+                class="ideas__image"
+                width="620"
+                height="420"
+                alt="a hand holds a book " />
+            </picture>
+            <ul class="ideas__list">
+              <li class="ideas__item">
+                We Make It Easy To Find The Great Design Talent, Easier...
+              </li>
+              <li class="ideas__item">Road Design Handbook For The International Road...</li>
+              <li class="ideas__item">The Best Kept Secrets About Creative People</li>
+              <li class="ideas__item">
+                We Make It Easy To Find The Great Design Talent, Easier...
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="ideas__link">See All</a>
         </div>
       </section>
     </main>

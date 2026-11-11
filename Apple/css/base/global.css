@@ -91,7 +91,7 @@ h6 {
   }
 }
 
-.section__desc {
+.section-desc {
   font-family: var(--second-family);
   font-size: 13px;
   line-height: 129%;

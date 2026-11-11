@@ -9,3 +9,6 @@
 @import "./blocks/header.css";
 @import "./blocks/hero-slider.css";
 @import "./blocks/categories.css";
+@import "./blocks/bestsellers.css";
+@import "./blocks/promo.css";
+@import "./blocks/ideas.css";

@@ -86,7 +86,6 @@
 }
 
 .header__actions-button {
-  color: var(--main-color);
   transition: color var(--transition-time), transform var(--transition-time);
 }
 
