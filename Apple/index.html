@@ -158,6 +158,7 @@
                 height="377"
                 class="categories__card-image"
                 src="./images/categories-laptop-img.png"
+                loading="lazy"
                 alt="Categorie Laptops" />
               <div class="categories__info">
                 <p class="categories__card-type">Laptops</p>
@@ -170,6 +171,7 @@
                 height="367"
                 class="categories__card-image"
                 src="./images/categories-phones-img.png"
+                loading="lazy"
                 alt="Categorie phones" />
               <div class="categories__info">
                 <p class="categories__card-type">Phones</p>
@@ -182,6 +184,7 @@
                 height="425"
                 class="categories__card-image"
                 src="./images/categories-tablet-img.png"
+                loading="lazy"
                 alt="Categories Tablet" />
               <div class="categories__info">
                 <p class="categories__card-type">Tablet</p>
@@ -194,6 +197,7 @@
                 height="270"
                 class="categories__card-image"
                 src="./images/categories-watch-img.png"
+                loading="lazy"
                 alt="Categories Watches" />
               <div class="categories__info">
                 <p class="categories__card-type">Watch</p>
@@ -219,6 +223,7 @@
                     width="247"
                     height="214"
                     src="./images/bestsellers-card-img-1.png"
+                    loading="lazy"
                     alt="Mag Book 13 pro" />
                 </picture>
                 <a href="#" class="bestsellers__card-link">
@@ -241,6 +246,7 @@
                     width="247"
                     height="214"
                     src="./images/bestsellers-card-img-2.png"
+                    loading="lazy"
                     alt="Smart Galaxy Watch 3" />
                 </picture>
                 <a href="#" class="bestsellers__card-link">
@@ -264,6 +270,7 @@
                     width="247"
                     height="214"
                     src="./images/bestsellers-card-img-3.png"
+                    loading="lazy"
                     alt="MacBook Air M1" />
                 </picture>
                 <a href="#" class="bestsellers__card-link">
@@ -287,6 +294,7 @@
                     width="247"
                     height="214"
                     src="./images/bestsellers-card-img-4.png"
+                    loading="lazy"
                     alt="iPad" />
                 </picture>
                 <a href="#" class="bestsellers__card-link">
@@ -322,6 +330,7 @@
                   width="259"
                   height="250"
                   class="promo__card-image"
+                  loading="lazy"
                   alt="Apple watches" />
               </picture>
             </article>
@@ -336,6 +345,7 @@
                   width="294"
                   height="250"
                   class="promo__card-image"
+                  loading="lazy"
                   alt="Laptop phones and watch" />
               </picture>
             </article>
@@ -350,6 +360,7 @@
                   width="355"
                   height="250"
                   class="promo__card-image"
+                  loading="lazy"
                   alt="laptop with phone" />
               </picture>
             </article>
@@ -370,6 +381,7 @@
                 class="ideas__image"
                 width="620"
                 height="420"
+                loading="lazy"
                 alt="a hand holds a book " />
             </picture>
             <ul class="ideas__list">
@@ -384,6 +396,80 @@
             </ul>
           </div>
           <a href="#" class="ideas__link">See All</a>
+        </div>
+      </section>
+      <section class="search">
+        <div class="container">
+          <h2 class="title-medium">Looking for anything else?</h2>
+          <div class="search__wrapper">
+            <form class="search__form">
+              <svg class="search__form-icon" width="30" height="29">
+                <use href="./icons/search-icon.svg"></use>
+              </svg>
+              <label>
+                <input
+                  class="search__input"
+                  name="search"
+                  placeholder="Search keyword"
+                  type="search" />
+              </label>
+            </form>
+            <ul class="search__tags">
+              <li class="search__tag">
+                <button class="search__tag-button" aria-label="Search">iPhone</button>
+              </li>
+              <li class="search__tag">
+                <button class="search__tag-button" aria-label="Search">Charger</button>
+              </li>
+              <li class="search__tag">
+                <button class="search__tag-button" aria-label="Search">Gift</button>
+              </li>
+              <li class="search__tag">
+                <button class="search__tag-button" aria-label="Search">Google Pixel 3</button>
+              </li>
+              <li class="search__tag">
+                <button class="search__tag-button" aria-label="Search">Keyboard</button>
+              </li>
+              <li class="search__tag">
+                <button class="search__tag-button" aria-label="Search">13 Pro Max</button>
+              </li>
+              <li class="search__tag">
+                <button class="search__tag-button" aria-label="Search">iPhone 12</button>
+              </li>
+              <li class="search__tag">
+                <button class="search__tag-button" aria-label="Search">Laptop</button>
+              </li>
+              <li class="search__tag">
+                <button class="search__tag-button" aria-label="Search">Mobile</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe__inner">
+            <h2 class="title-medium">Never miss a thing</h2>
+            <p class="subscribe__desc">
+              Sign up for texts to be notified about our best offers on the perfect gifts.
+            </p>
+            <picture>
+              <source srcset="./images/subscribe-image.webp" type="image/webp" />
+              <img
+                src="./images/subscribe-image.png"
+                class="subscribe__img"
+                width="233"
+                height="200"
+                loading="lazy"
+                alt="Laptop phones and watch" />
+            </picture>
+            <form class="subscribe__form">
+              <label>
+                <input class="subscribe__form-input" type="email" placeholder="Your email" />
+              </label>
+              <button type="submit" class="subscribe__form-button">Sign up</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>

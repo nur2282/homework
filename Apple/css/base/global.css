@@ -103,3 +103,10 @@ h6 {
   box-shadow: 0 4px 35px 0 var(--shadow-color);
   overflow: hidden;
 }
+
+.subscribe__form-input::placeholder,
+.search__input::placeholder {
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--main-color);
+}
