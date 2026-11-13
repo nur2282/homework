@@ -4,6 +4,8 @@
 }
 
 .ideas__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 35px;
   padding-top: 56px;
@@ -12,7 +14,12 @@
 
 @media(width <=992px) {
   .ideas__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 }
@@ -26,9 +33,16 @@
 }
 
 .ideas__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 23px;
+  -webkit-transform: translateY(14px);
+  -ms-transform: translateY(14px);
   transform: translateY(14px);
 }
 
@@ -50,12 +64,19 @@
   background-image: url(../../icons/curwed-arrow.svg);
   width: 30px;
   height: 28px;
+  -webkit-transition: -webkit-transform var(--transition-time);
+  transition: -webkit-transform var(--transition-time);
   transition: transform var(--transition-time);
+  transition: transform var(--transition-time), -webkit-transform var(--transition-time);
 }
 
 .ideas__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-size: 24px;
   line-height: 120%;
@@ -65,6 +86,10 @@
 
 @media(any-hover: hover) {
   .ideas__link:hover::after {
+
+    -webkit-transform: rotate(20deg);
+
+    -ms-transform: rotate(20deg);
 
     transform: rotate(20deg);
   }

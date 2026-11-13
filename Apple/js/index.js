@@ -1,5 +1,6 @@
 import HeaderFixed from "./header.js";
 import BurgerMenu from "./burger.js";
+import Modal from "./modal.js";
 import { heroSlider } from "./hero-slider.js";
 
 try {
@@ -26,6 +27,10 @@ try {
     },
     headerFixed,
   );
+  new Modal({
+    PAGE_BODY: "page__body",
+    PAGE_BODY_NO_SCROLL: "page__body--no-scroll",
+  });
   heroSlider();
 } catch (error) {
   console.error(error);

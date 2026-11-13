@@ -3,6 +3,7 @@
   font-weight: 400;
   color: var(--main-color);
   min-width: 375px;
+  scrollbar-gutter: stable;
 }
 
 .container {
@@ -20,7 +21,7 @@ h6 {
   font-weight: 400;
 }
 
-.slider-desc {
+.md-desc {
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
@@ -29,6 +30,8 @@ h6 {
 
 .button {
   position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 14px 53px;
   background-color: transparent;
@@ -38,6 +41,7 @@ h6 {
   line-height: 120%;
   text-transform: capitalize;
   color: var(--main-color);
+  -webkit-transition: padding-right var(--transition-time);
   transition: padding-right var(--transition-time);
 }
 
@@ -49,9 +53,12 @@ h6 {
   background: url(../../icons/arrow-down.svg) no-repeat center / cover;
   width: 12px;
   height: 8px;
+  -webkit-transform: rotate(267deg);
+  -ms-transform: rotate(267deg);
   transform: rotate(267deg);
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: visibility var(--transition-time), opacity var(--transition-time), right var(--transition-time);
   transition: visibility var(--transition-time), opacity var(--transition-time), right var(--transition-time);
 
 }
@@ -100,8 +107,37 @@ h6 {
 }
 
 .categories__card {
+  -webkit-box-shadow: 0 4px 35px 0 var(--shadow-color);
   box-shadow: 0 4px 35px 0 var(--shadow-color);
   overflow: hidden;
+}
+
+.subscribe__form-input::-webkit-input-placeholder,
+.search__input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--main-color);
+}
+
+.subscribe__form-input::-moz-placeholder,
+.search__input::-moz-placeholder {
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--main-color);
+}
+
+.subscribe__form-input:-ms-input-placeholder,
+.search__input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--main-color);
+}
+
+.subscribe__form-input::-ms-input-placeholder,
+.search__input::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--main-color);
 }
 
 .subscribe__form-input::placeholder,
@@ -109,4 +145,36 @@ h6 {
   font-size: 14px;
   line-height: 120%;
   color: var(--main-color);
+}
+
+
+/* menu hover */
+
+.menu-link--hover::after,
+.menu-link--hover::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  width: 0%;
+  height: 1px;
+  background-color: var(--hover-link-color);
+  -webkit-transition: width var(--transition-time) ease-in-out;
+  transition: width var(--transition-time) ease-in-out;
+}
+
+.menu-link--hover::after {
+  right: 50%;
+}
+
+.menu-link--hover::before {
+  left: 50%;
+}
+
+@media(any-hover: hover) {
+
+  .menu-link--hover:hover::before,
+  .menu-link--hover:hover::after {
+    width: 50%;
+  }
+
 }

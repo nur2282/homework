@@ -12,6 +12,7 @@
   --second-bg-color: #f8f9fa;
   --hover-link-color: #328066;
   --search-border-color: #c5c5c5;
+  --overlay: linear-gradient(rgba(30, 30, 30, .9), #000 1810%);
 
 
   /* container */

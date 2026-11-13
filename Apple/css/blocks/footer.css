@@ -1,0 +1,129 @@
+.footer {
+  background-color: var(--second-bg-color);
+  padding-top: 45px;
+}
+
+
+/* footer top */
+.footer__top {
+  padding-bottom: 80px;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+@media(width <=992px) {
+  .footer__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.footer__info {
+  max-width: 394px;
+  padding-right: 90px;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 18px;
+
+}
+
+.footer__columns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 28px 1fr 28px 1fr 28px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 28px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: left;
+}
+
+@media(width <=624px) {
+  .footer__columns {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+  }
+}
+
+.footer__menu-title {
+  padding-bottom: 20px;
+  font-size: 22px;
+  line-height: 125%;
+}
+
+.footer__menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer__menu-link {
+  position: relative;
+  font-size: 17px;
+  line-height: 127%;
+  color: var(--main-color);
+}
+
+
+/* footer bottom */
+
+.footer__bottom::before {
+  content: "";
+
+  display: block;
+  padding-top: 53px;
+  max-width: 1350px;
+  margin: 0 auto;
+  border-top: 1px solid var(--first-bg-color);
+}
+
+.footer__author {
+  font-family: var(--main-color);
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.footer__author-link {
+  font-size: 18px;
+  line-height: 120%;
+  color: var(--main-color);
+}
+
+
+
+.footer__author-link::after {
+  content: "";
+  display: inline-block;
+  margin-left: 5px;
+  background-image: url(../../icons/curwed-footer-arrow.svg);
+  width: 21px;
+  height: 18px;
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
+
+}
