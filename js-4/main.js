@@ -32,16 +32,16 @@ alert(checkAccess(userName, userPassword));
 const getTime = +prompt("Введите время от 0 до 23 в числах");
 
 const getTimeOfDay = time => {
-  if (time < 0 || time > 23) {
-    return "Неккоректное время";
-  } else if (time <= 5) {
+  if (time <= 5) {
     return "Ночь";
   } else if (time <= 11) {
     return "Утро";
   } else if (time <= 17) {
     return "День";
-  } else {
+  } else if (time <= 23) {
     return "Вечер";
+  } else {
+    return "Некорекктное время";
   }
 };
 
