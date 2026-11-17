@@ -41,7 +41,7 @@ const getTimeOfDay = time => {
   } else if (time <= 23) {
     return "Вечер";
   } else {
-    return "Некорекктное время";
+    return "Некорректное время";
   }
 };
 
