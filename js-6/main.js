@@ -92,4 +92,6 @@ const first = (arr, n) => {
   return result;
 };
 
+console.log(first(numbers, 0));
 console.log(first(numbers, 1));
+console.log(first(numbers, 5));
