@@ -1,11 +1,5 @@
 "use strict";
 
-const todoKeys = {
-  id: "id",
-  text: "text",
-  is_completed: "is_completed",
-};
-
 const todos = [];
 
 const errTodoNotFound = todoId => `Todo with id ${todoId} not found`;
@@ -43,13 +37,40 @@ const deleteTodoById = (todos, todoId) => {
   todos.splice(todoIndex, 1);
   return todos;
 };
+// Редактирование текста
+// const editTodoTextById = (todos, todoId, editText) => {
+//   const todo = todos.find(todo => todo[todoKeys.id] === todoId);
+//   if (!todo) {
+//     console.error(errTodoNotFound(todoId));
+//     return null;
+//   }
+//   todo[todoKeys.text] = editText;
+//   return todo;
+// };
 
-const editTodoTextById = (todos, todoId, editText) => {
-  const todo = todos.find(todo => todo[todoKeys.id] === todoId);
-  if (!todo) {
-    console.error(errTodoNotFound(todoId));
-    return null;
-  }
-  todo[todoKeys.text] = editText;
-  return todo;
+// При помощи метода querySelector получаем элементы .form, .input и .todos
+const form = document.querySelector(".form");
+const input = document.querySelector(".input");
+const todosList = document.querySelector(".todos");
+// Создаем функцию createTodoElement(text), которая будет создавать todo в виде разметки
+const createTodoElement = text => {
+  const list = document.createElement("li");
+  list.classList.add("todo");
+
+  list.innerHTML = `
+    <div class="todo-text">${text}</div>
+      <div class="todo-actions">
+        <button class="button-complete button">&#10004;</button>
+        <button class="button-delete button">&#10006;</button>
+      </div>
+  `;
+  return list;
+};
+// Создаем функцию handleCreateTodo(todos, text), которая будет вызывать createTodo и createTodoElement
+const handleCreateTodo = (todos, text) => {
+  const newTodo = createTodo(todos, text);
+
+  const todoElement = createTodoElement(newTodo[todoKeys.text]);
+
+  todosList.append(todoElement);
 };
