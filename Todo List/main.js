@@ -1,5 +1,11 @@
 "use strict";
 
+const todoKeys = {
+  id: "id",
+  text: "text",
+  is_completed: "is_completed",
+};
+
 const todos = [];
 
 const errTodoNotFound = todoId => `Todo with id ${todoId} not found`;
