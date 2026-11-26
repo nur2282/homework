@@ -12,7 +12,7 @@
 .header--fixed {
   -webkit-box-shadow: 0 0 20px var(--shadow-color);
   box-shadow: 0 0 20px var(--shadow-color);
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: var(--second-bg-color);
 }
 
