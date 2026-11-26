@@ -22,7 +22,20 @@
               <a class="menu__link menu-link--hover" href="#Support">Support</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link menu-link--hover" href="#solutions">solutions</a>
+              <div class="header__menu-dropdown">
+                <button class="header__dropdown-btn">solutions</button>
+                <ul class="header__dropdown-list">
+                  <li class="header__dropdown-item">
+                    <a href="#Iphone" class="header__dropdown-link menu-link--hover">Iphone</a>
+                  </li>
+                  <li class="header__dropdown-item">
+                    <a href="#MacBook" class="header__dropdown-link menu-link--hover">MacBook</a>
+                  </li>
+                  <li class="header__dropdown-item">
+                    <a href="#Tablet" class="header__dropdown-link menu-link--hover">Tablet</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="menu__item">
               <a class="menu__link menu-link--hover" href="#about">about</a>
@@ -34,7 +47,7 @@
         </nav>
         <div class="header__actions">
           <button
-            class="header__actions-button"
+            class="header__actions-button search-btn"
             data-modal-button="search"
             data-modal-speed="500"
             aria-label="Search"
@@ -60,10 +73,11 @@
           </button>
         </div>
       </div>
+      <div class="overlay"></div>
     </header>
 
     <main class="main">
-      <section class="section">
+      <section class="hero">
         <div class="container hero__container">
           <div class="hero__slider-wrapper">
             <button
@@ -145,6 +159,7 @@
                 <use class="hero__slider-button-icon" href="./icons/slider-arrow-left.svg"></use>
               </svg>
             </button>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>

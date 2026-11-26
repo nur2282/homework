@@ -6,6 +6,10 @@ export const heroSlider = () => {
     mousewhel: {
       forceToAxis: true,
     },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
     navigation: {
       prevEl: ".hero__slider-button--prev",
       nextEl: ".hero__slider-button--next",

@@ -21,6 +21,10 @@ h6 {
   font-weight: 400;
 }
 
+a {
+  color: var(--main-color);
+}
+
 .md-desc {
   font-weight: 400;
   font-size: 16px;
@@ -119,33 +123,6 @@ h6 {
   color: var(--main-color);
 }
 
-.subscribe__form-input::-moz-placeholder,
-.search__input::-moz-placeholder {
-  font-size: 14px;
-  line-height: 120%;
-  color: var(--main-color);
-}
-
-.subscribe__form-input:-ms-input-placeholder,
-.search__input:-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 120%;
-  color: var(--main-color);
-}
-
-.subscribe__form-input::-ms-input-placeholder,
-.search__input::-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 120%;
-  color: var(--main-color);
-}
-
-.subscribe__form-input::placeholder,
-.search__input::placeholder {
-  font-size: 14px;
-  line-height: 120%;
-  color: var(--main-color);
-}
 
 
 /* menu hover */
